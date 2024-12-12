@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Log in to Docker Hub
-        run: echo "dckr_pat_xQsUpzNuHfeuaaeX9MnFmFhKyo4" | docker login -u "bilaalahmedr" --password-stdin
+        run: echo "Bilal@245225" | docker login -u "bilaalahmedr" --password-stdin
 
       - name: Build Docker image
         run: docker build -t ${{ env.IMAGE_NAME }} .
